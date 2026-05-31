@@ -42,7 +42,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Build
-        run: hugo --minify --baseURL "https://yulinshao.github.io/"
+        run: hugo --minify --baseURL "https://syl051088.github.io/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
