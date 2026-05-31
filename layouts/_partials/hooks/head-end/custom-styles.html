@@ -1,0 +1,22 @@
+<style>
+  /* Light mode: soft sky-blue → clean white → gentle lavender */
+  body {
+    background: linear-gradient(160deg, #dbeafe 0%, #f8fafc 35%, #ede9fe 100%) !important;
+    background-attachment: fixed !important;
+  }
+
+  /* Dark mode: deep navy → dark indigo */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background: linear-gradient(160deg, #0f172a 0%, #1e1b4b 100%) !important;
+      background-attachment: fixed !important;
+    }
+  }
+
+  /* Also handle the .dark class toggled by the theme switcher */
+  .dark body,
+  html.dark body {
+    background: linear-gradient(160deg, #0f172a 0%, #1e1b4b 100%) !important;
+    background-attachment: fixed !important;
+  }
+</style>
